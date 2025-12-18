@@ -1,0 +1,260 @@
+.partnership-section {
+  background-color: #000;
+  color: #fff;
+  width: 100%;
+  padding: 100px 0;
+  position: relative;
+}
+
+.partnership-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 60px;
+}
+
+.partnership-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+/* Left Side - Image */
+.partnership-image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 600px;
+}
+
+.partnership-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 0;
+}
+
+/* Decorative Elements */
+.partnership-decorative-dots {
+  position: absolute;
+  left: -40px;
+  top: 60px;
+  z-index: 2;
+}
+
+.partnership-dots {
+  width: auto;
+  height: auto;
+  display: block;
+}
+
+.partnership-decorative-chevrons {
+  position: absolute;
+  left: -40px;
+  bottom: 60px;
+  z-index: 2;
+}
+
+.partnership-chevrons {
+  width: auto;
+  height: auto;
+  display: block;
+}
+
+/* Right Side - Text Content */
+.partnership-text-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px 0;
+}
+
+.partnership-title {
+  font-size: 64px;
+  font-weight: 700;
+  color: #fff;
+  margin: 0 0 30px 0;
+  line-height: 1.2;
+  text-align: left;
+}
+
+.title-highlight {
+  /* 1. Apply the radial gradient as a background */
+  background: radial-gradient(circle, #8076f4 0%, #ffffff 70%);
+
+  /* 2. Clip the background so it only shows through the letters */
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  /* 3. Make the actual text transparent so the background shows through */
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+
+  /* Optional: Ensure the gradient stays centered on the text itself */
+  display: inline-block;
+}
+
+.partnership-description {
+  font-size: 18px;
+  color: #fff;
+  margin: 0 0 40px 0;
+  line-height: 1.6;
+  text-align: left;
+}
+
+/* Button */
+.partnership-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 0;
+  transition: all 0.3s ease;
+  width: fit-content;
+}
+
+.partnership-button:hover {
+  color: #fc0000;
+}
+
+.partnership-button:hover svg circle {
+  stroke: #fc0000;
+}
+
+.partnership-button:hover svg path {
+  stroke: #fc0000;
+}
+
+.partnership-button svg {
+  transition: transform 0.3s ease;
+}
+
+.partnership-button:hover svg {
+  transform: translateX(4px);
+}
+
+/* Tablet Styles */
+@media (max-width: 1024px) {
+  .partnership-section {
+    padding: 80px 0;
+  }
+
+  .partnership-container {
+    padding: 0 40px;
+  }
+
+  .partnership-content {
+    gap: 40px;
+  }
+
+  .partnership-image-wrapper {
+    min-height: 500px;
+  }
+
+  .partnership-decorative-dots {
+    left: -30px;
+    top: 40px;
+  }
+
+  .partnership-decorative-chevrons {
+    left: -30px;
+    bottom: 40px;
+  }
+
+  .partnership-title {
+    font-size: 48px;
+    margin-bottom: 24px;
+  }
+
+  .partnership-description {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .partnership-section {
+    padding: 60px 0;
+  }
+
+  .partnership-container {
+    padding: 0 24px;
+  }
+
+  .partnership-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .partnership-image-wrapper {
+    min-height: 400px;
+    order: 1;
+  }
+
+  .partnership-decorative-dots,
+  .partnership-decorative-chevrons {
+    display: none;
+  }
+
+  .partnership-text-content {
+    order: 2;
+    padding: 0;
+  }
+
+  .partnership-title {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+
+  .partnership-description {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+
+  .partnership-button {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .partnership-section {
+    padding: 40px 0;
+  }
+
+  .partnership-container {
+    padding: 0 20px;
+  }
+
+  .partnership-content {
+    gap: 30px;
+  }
+
+  .partnership-image-wrapper {
+    min-height: 300px;
+  }
+
+  .partnership-title {
+    font-size: 28px;
+  }
+
+  .partnership-description {
+    font-size: 14px;
+  }
+
+  .partnership-button {
+    font-size: 14px;
+    gap: 8px;
+  }
+
+  .partnership-button svg {
+    width: 18px;
+    height: 18px;
+  }
+}

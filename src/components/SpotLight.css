@@ -1,0 +1,181 @@
+.spotlight-section {
+  background-color: #000;
+  color: #fff;
+  width: 100%;
+  padding: 80px 0;
+}
+
+.spotlight-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+/* Header */
+.spotlight-header {
+  margin-bottom: 50px;
+}
+
+.spotlight-title {
+  font-size: 56px;
+  font-weight: 800;
+  margin: 0 0 15px 0;
+}
+
+.spotlight-subtitle {
+  font-size: 18px;
+  opacity: 0.9;
+  max-width: 700px;
+  line-height: 1.5;
+}
+
+/* Grid Layout */
+.spotlight-content {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1fr 1fr;
+  grid-template-rows: repeat(2, 320px);
+  gap: 24px;
+  align-items: stretch;
+}
+
+/* Positioning specific cards */
+.spotlight-graphic { 
+  grid-column: 1; 
+  grid-row: 1 / span 2; 
+  align-self: center; 
+  justify-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card-news { grid-column: 2; grid-row: 1; }
+.card-blogs { grid-column: 3; grid-row: 1; }
+.card-case { grid-column: 2; grid-row: 2; }
+.card-report { grid-column: 3; grid-row: 2; }
+.card-success { grid-column: 4; grid-row: 2; }
+
+/* Card Styling */
+.spotlight-card {
+  position: relative;
+}
+
+.spotlight-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.spotlight-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.spotlight-card-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.5) 100%);
+  z-index: 1;
+}
+
+.spotlight-card-content {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.spotlight-card-label {
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.spotlight-card-description {
+  margin-top: 20px;
+  font-size: 16px;
+  line-height: 1.5;
+  max-width: 95%;
+  opacity: 0.95;
+}
+
+/* Learn More Button inside Card */
+.spotlight-card-button {
+  align-self: flex-end;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.spotlight-card-button a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.spotlight-card-button span {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.spotlight-card-button:hover {
+  transform: translateX(5px);
+}
+
+/* Graphic scale */
+.spotlight-graphic-image {
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .spotlight-content {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+  }
+  .spotlight-graphic { 
+    grid-column: 1 / span 2; 
+    grid-row: auto; 
+    min-height: 400px;
+  }
+  .card-news { grid-column: 1; grid-row: auto; }
+  .card-blogs { grid-column: 2; grid-row: auto; }
+  .card-case { grid-column: 1; grid-row: auto; }
+  .card-report { grid-column: 2; grid-row: auto; }
+  .card-success { grid-column: 1 / span 2; grid-row: auto; }
+}
+
+@media (max-width: 768px) {
+  .spotlight-content {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+  .spotlight-graphic { 
+    grid-column: 1; 
+    grid-row: auto;
+    min-height: 300px;
+  }
+  .card-news, .card-blogs, .card-case, .card-report, .card-success {
+    grid-column: 1;
+    grid-row: auto;
+  }
+}

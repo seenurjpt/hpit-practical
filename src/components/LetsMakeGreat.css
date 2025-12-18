@@ -1,0 +1,199 @@
+.lets-make-great-section {
+  width: 100%;
+  height: 100vh;
+  min-height: 600px;
+  background-color: #000;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.lets-make-great-container {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+}
+
+/* Background Image */
+.lets-make-great-image-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.lets-make-great-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Text Content Overlay */
+.lets-make-great-text-content {
+  position: absolute;
+  left: 60px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
+}
+
+.lets-make-great-title {
+  font-size: 72px;
+  font-weight: 700;
+  color: #fff;
+  margin: 0 0 50px 0;
+  line-height: 1.1;
+  text-align: left;
+  letter-spacing: -0.02em;
+}
+
+.lets-make-great-cta {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.lets-make-great-cta-text {
+  font-size: 32px;
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: 0.5px;
+}
+
+.lets-make-great-cta-button {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 2px solid #FC0000;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  padding: 0;
+  flex-shrink: 0;
+}
+
+.lets-make-great-cta-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 20px rgba(252, 0, 0, 0.5);
+}
+
+.lets-make-great-cta-button:active {
+  transform: scale(0.95);
+}
+
+.lets-make-great-cta-button svg {
+  width: 32px;
+  height: 32px;
+}
+
+/* Tablet Styles */
+@media (max-width: 1024px) {
+  .lets-make-great-section {
+    height: auto;
+    min-height: 600px;
+  }
+
+  .lets-make-great-text-content {
+    left: 40px;
+    max-width: 60%;
+  }
+
+  .lets-make-great-title {
+    font-size: 56px;
+    margin-bottom: 40px;
+  }
+
+  .lets-make-great-cta-text {
+    font-size: 28px;
+  }
+
+  .lets-make-great-cta-button {
+    width: 56px;
+    height: 56px;
+  }
+
+  .lets-make-great-cta-button svg {
+    width: 28px;
+    height: 28px;
+  }
+
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .lets-make-great-section {
+    height: auto;
+    min-height: 500px;
+  }
+
+  .lets-make-great-text-content {
+    left: 24px;
+    max-width: 80%;
+  }
+
+  .lets-make-great-title {
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
+
+  .lets-make-great-cta {
+    gap: 16px;
+  }
+
+  .lets-make-great-cta-text {
+    font-size: 24px;
+  }
+
+  .lets-make-great-cta-button {
+    width: 48px;
+    height: 48px;
+  }
+
+  .lets-make-great-cta-button svg {
+    width: 24px;
+    height: 24px;
+  }
+
+}
+
+@media (max-width: 480px) {
+  .lets-make-great-section {
+    min-height: 450px;
+  }
+
+  .lets-make-great-text-content {
+    left: 20px;
+    max-width: 85%;
+  }
+
+  .lets-make-great-title {
+    font-size: 32px;
+    margin-bottom: 24px;
+  }
+
+  .lets-make-great-cta-text {
+    font-size: 20px;
+  }
+
+  .lets-make-great-cta-button {
+    width: 44px;
+    height: 44px;
+  }
+
+  .lets-make-great-cta-button svg {
+    width: 22px;
+    height: 22px;
+  }
+}
+
