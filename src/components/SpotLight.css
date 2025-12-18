@@ -39,20 +39,40 @@
 }
 
 /* Positioning specific cards */
-.spotlight-graphic { 
-  grid-column: 1; 
-  grid-row: 1 / span 2; 
-  align-self: center; 
+.spotlight-graphic {
+  grid-column: 1;
+  grid-row: 1 / span 2;
+  align-self: center;
   justify-self: center;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.card-news { grid-column: 2; grid-row: 1; }
-.card-blogs { grid-column: 3; grid-row: 1; }
-.card-case { grid-column: 2; grid-row: 2; }
-.card-report { grid-column: 3; grid-row: 2; }
-.card-success { grid-column: 4; grid-row: 2; }
+
+.card-news {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.card-blogs {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+.card-case {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.card-report {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+.card-success {
+  grid-column: 4;
+  grid-row: 2;
+}
 
 /* Card Styling */
 .spotlight-card {
@@ -81,7 +101,7 @@
 .spotlight-card-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to bottom, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.5) 100%);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 100%);
   z-index: 1;
 }
 
@@ -152,16 +172,37 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
   }
-  .spotlight-graphic { 
-    grid-column: 1 / span 2; 
-    grid-row: auto; 
+
+  .spotlight-graphic {
+    grid-column: 1 / span 2;
+    grid-row: auto;
     min-height: 400px;
   }
-  .card-news { grid-column: 1; grid-row: auto; }
-  .card-blogs { grid-column: 2; grid-row: auto; }
-  .card-case { grid-column: 1; grid-row: auto; }
-  .card-report { grid-column: 2; grid-row: auto; }
-  .card-success { grid-column: 1 / span 2; grid-row: auto; }
+
+  .card-news {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
+  .card-blogs {
+    grid-column: 2;
+    grid-row: auto;
+  }
+
+  .card-case {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
+  .card-report {
+    grid-column: 2;
+    grid-row: auto;
+  }
+
+  .card-success {
+    grid-column: 1 / span 2;
+    grid-row: auto;
+  }
 }
 
 @media (max-width: 768px) {
@@ -169,12 +210,18 @@
     grid-template-columns: 1fr;
     grid-template-rows: auto;
   }
-  .spotlight-graphic { 
-    grid-column: 1; 
+
+  .spotlight-graphic {
+    grid-column: 1;
     grid-row: auto;
     min-height: 300px;
   }
-  .card-news, .card-blogs, .card-case, .card-report, .card-success {
+
+  .card-news,
+  .card-blogs,
+  .card-case,
+  .card-report,
+  .card-success {
     grid-column: 1;
     grid-row: auto;
   }
