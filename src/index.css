@@ -29,3 +29,19 @@ body {
   background-clip: text;
 }
 
+
+.text-efffect {
+  /* 1. Apply the radial gradient as a background */
+  background: radial-gradient(circle, #8076f4 0%, #ffffff 70%);
+
+  /* 2. Clip the background so it only shows through the letters */
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  /* 3. Make the actual text transparent so the background shows through */
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+
+  /* Optional: Ensure the gradient stays centered on the text itself */
+  display: inline-block;
+}

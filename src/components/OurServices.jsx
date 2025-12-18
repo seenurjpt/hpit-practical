@@ -51,7 +51,7 @@ const OurServices = () => {
       <div className="our-services-container">
         {/* Header */}
         <div className="our-services-header">
-          <h2 className="our-services-title title-highlight">Our Services</h2>
+          <h2 className="our-services-title text-efffect">Our Services</h2>
           <p className="our-services-description">
             These case studies highlight the challenges our clients faced, the
             tailored solutions we provided, and the measurable results achieved.
@@ -76,7 +76,7 @@ const OurServices = () => {
               <div
                 className={`our-service-content our-service-content-${service.textPosition}`}
               >
-                <h3 className="our-service-title title-highlight">{service.title}</h3>
+                <h3 className="our-service-title text-efffect">{service.title}</h3>
                 <p className="our-service-description">{service.description}</p>
                 <ArrowButton text="View Case Study" />
               </div>

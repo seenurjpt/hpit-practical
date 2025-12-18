@@ -42,7 +42,7 @@ const LatestInsights = () => {
         <div className='latest-insights-header'>
           <div className='latest-insights-header-content'>
             <h2 className='latest-insights-title'>
-              Explore Our <span className='title-highlight'>Latest</span>{" "}
+              Explore Our <span className='text-efffect'>Latest</span>{" "}
               Insights
             </h2>
             <p className='latest-insights-description'>

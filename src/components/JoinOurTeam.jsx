@@ -30,7 +30,7 @@ const JoinOurTeam = () => {
         <div className='join-team-header'>
           <div className='join-team-header-content'>
             <h2 className='join-team-title'>
-              Join <span className='title-highlight'>Our</span> Team
+              Join <span className='text-efffect'>Our</span> Team
             </h2>
             <p className='join-team-description'>
               We're always looking for passionate, driven individuals to grow

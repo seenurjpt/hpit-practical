@@ -33,7 +33,7 @@ const Partnership = () => {
 
           {/* Right Side - Text Content */}
           <div className="partnership-text-content">
-            <h2 className="partnership-title title-highlight">
+            <h2 className="partnership-title text-efffect">
               The Power of{" "}
               <span className="">Partnership</span>
             </h2>

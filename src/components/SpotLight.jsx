@@ -47,7 +47,7 @@ const SpotLight = () => {
     <section className='spotlight-section'>
       <div className='spotlight-container'>
         <div className='spotlight-header'>
-          <h2 className='spotlight-title title-highlight'>SpotLight</h2>
+          <h2 className='spotlight-title text-efffect'>SpotLight</h2>
           <p className='spotlight-subtitle'>
             SpotLight showcases the people, projects, and ideas driving
             innovation and impact across HPIT

@@ -15,7 +15,7 @@ const FeaturedNewsletter = () => {
     <section className="featured-newsletter-section">
       <div className="featured-newsletter-container">
         {/* Section Title */}
-        <h2 className="featured-newsletter-section-title title-highlight">Featured Newsletter</h2>
+        <h2 className="featured-newsletter-section-title text-efffect">Featured Newsletter</h2>
 
         <div className="featured-newsletter-content">
           {/* Left Side - Image with Decorative Elements */}
